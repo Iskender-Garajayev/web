@@ -1,5 +1,5 @@
 import React from 'react'
-import {MdShoppingBasket} from 'react-icons/md'
+import {MdShoppingBasket, MdAdd, MdLogout} from 'react-icons/md'
 import { motion } from 'framer-motion'
 
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
@@ -18,13 +18,15 @@ const Header = () => {
     const provider = new GoogleAuthProvider();
 
   const login = async () => {
-    const {user:{refreshToken, providerData}} = await signInWithPopup(firebaseAuth, provider);
-    dispach({
-      type : actionType.SET_USER,
-      user : providerData[0],
-    });
-
-    localStorage.setItem('user', JSON.stringify(providerData[0]))
+    if(!user){
+      const {user:{refreshToken, providerData}} = await signInWithPopup(firebaseAuth, provider);
+      dispach({
+        type : actionType.SET_USER,
+        user : providerData[0],
+      });
+  
+      localStorage.setItem('user', JSON.stringify(providerData[0]))
+    }
   }
   return (
     <header className=' fixed z-50 w-screen p-6 px-16'>
@@ -51,6 +53,10 @@ const Header = () => {
 
           <div className=' relative'>
             <motion.img onClick={login} whileTap={{scale: 0.6}} className=' w-10 min-w-[40px] h-10 min-h-[40px] drop-shadow-xl cursor-pointer rounded-full' src={user ? user.photoURL: Avatar} alt='userprofile'/>
+            <div className=' w-40 bg-green-50 shadow-xl rounded-lg flex flex-col absolute top-12 right-0'>
+              <p className=' px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-200 transition-all duration-100 ease-in-out text-textColor text-base'>New Item <MdAdd/></p>
+              <p className=' px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-200 transition-all duration-100 ease-in-out text-textColor text-base'>Logout<MdLogout/></p>
+            </div>
           </div>
 
         </div>
