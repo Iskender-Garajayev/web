@@ -16,6 +16,7 @@ const MainContainer = () => {
       </div>
       <div className=' py-2 bg-blue-400 flex-1'></div>
     </div>
+    
   )
 }
 
