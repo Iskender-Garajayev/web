@@ -8,4 +8,4 @@ export const heroData =[
   {di: 2, name: 'Strawberies', desp: 'Fresh Strawberies', price: '10.5', imageSrc: F1 },
   {di: 3, name: 'Chicken Kebab', desp: 'Mixed Kebab Plate', price: '8.37', imageSrc: C3 },
   {di: 4, name: 'Fesh Food', desp: 'Mixed Fish Delishes', price: '5.25', imageSrc: FI1 },
-]
+] 
