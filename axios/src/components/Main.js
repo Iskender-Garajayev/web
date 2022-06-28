@@ -7,7 +7,7 @@ import {pizzaData} from '../util/PizzaData'
 
 function Main() {
   return (
-    <div>
+    <div className='main_card_img'>
       <div className='main_img'>
         {pizzaData && pizzaData.map(n=>(
           <div key={n.id} className="card">

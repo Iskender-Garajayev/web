@@ -11,16 +11,19 @@
   align-items: center;
   justify-items: center;
   justify-content: center;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
 }
-.card img{
+/* .card img div{
   background: #000;
   width: 200px;
   height: 200px;
-}
+} */
 
 .card{
   justify-content: space-between;
   background: blue;
   height: 200px;
   width: 200px;
+  flex-direction: row;
 }
