@@ -19,9 +19,9 @@ function Main() {
                 src={n.imgSrc}
                 alt="p1"
               />
-              <p>{n.name}</p>
-              <p>{n.desp}</p>
-              <p>{n.price}</p>
+              <p className=" text-black text-lg">{n.name}</p>
+              <p className=" text-lg ">{n.desp}</p>
+              <p className=" text-red-700">{n.price}</p>
             </div>
           ))}
       </div>
