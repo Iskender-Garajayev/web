@@ -5,6 +5,8 @@
   justify-content: space-between;
   align-items: center;
   justify-items: center;
+  position: fixed;
+  width: 100%;
 }
 
 .header_logo{
