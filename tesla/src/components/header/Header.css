@@ -1,5 +1,42 @@
+
+
+.header_all{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
+
 .header_logo{
   width: 180px;
   padding-top: 20px;
   padding-left: 50px;
 }
+
+.header_models ul{
+  display: flex;
+  align-items: center;
+}
+
+
+.header_models li{
+ list-style-type: none;
+ font-family: 'Poppins' ;
+ font-weight: 600;
+ display: flex;
+ padding-left: 20px;
+}
+
+.header_navbar ul{
+  display: flex;
+  padding-right: 20px;
+}
+
+
+.header_navbar li{
+  list-style-type: none;
+  font-family: 'Poppins' ;
+  font-weight: 600;
+  display: flex;
+  padding-left: 20px;
+ }

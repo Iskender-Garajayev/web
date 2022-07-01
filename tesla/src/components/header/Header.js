@@ -4,21 +4,32 @@ import logo from '../../img/logo.png'
 
 function Header() {
   return (
-    <div>
+    <div className='header_all'>
       {/* logo */}
       <div>
         <img className='header_logo' src={logo} alt="logo" />
       </div>
 
       {/* models */}
-      <div>
-
+      <div className='header_models'>
+        <ul>
+          <li>Mosel S</li>
+          <li>Model 3</li>
+          <li>Model X</li>
+          <li>Model Y</li>
+          <li>Solar Roof</li>
+          <li>Solar Panels</li>
+        </ul>
       </div>
 
 
       {/* navbar */}
-      <div>
-
+      <div className='header_navbar'>
+        <ul>
+          <li>Shop</li>
+          <li>Account</li>
+          <li>Menu</li>
+        </ul>
       </div>
     </div>
   )
