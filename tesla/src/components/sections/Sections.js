@@ -1,6 +1,6 @@
 import React from 'react'
 import './Sections.css'
-// import tr2 from '../../img/tr2.png'
+import tr2 from '../../img/tr2.png'
 
 function Sections() {
   return (
@@ -9,7 +9,7 @@ function Sections() {
       <div>
         <h2>Model S</h2>
         <p>Order Oline for <a href="http://" target="_blank" rel="noopener noreferrer">Touchless Delivery</a></p>
-        {/* <img src={tr2} alt="" /> */}
+        <img src={tr2} alt="Tesla" />
       </div>
     </div>
   )
