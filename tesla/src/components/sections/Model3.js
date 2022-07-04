@@ -7,6 +7,10 @@ function Model3() {
       <h2>Model 3</h2>
       <p>Order Oline for <a href="http://" target="_blank" rel="noopener noreferrer">Touchless Delivery</a></p>
       <img src={tr3} alt="Tesla" />
+      <div className='btn'>
+        <button type="submit">custem order</button>
+        <button type="submit">existing investory</button>
+      </div>
     </div>
   )
 }
