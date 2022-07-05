@@ -1,5 +1,8 @@
-.model3 h2{
+.model3 {
   align-items: center;
   justify-content: center;
   margin-top: 220px;
+  padding-top: 200px;
+  height: 200px;
+  background: black;
 }
