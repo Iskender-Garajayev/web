@@ -14,7 +14,7 @@ function Sections() {
             Touchless Delivery
           </a>
         </p>
-        <img src={tr2} alt="Tesla" />
+        <img className="img" src={tr2} alt="Tesla" />
         <div className="btn">
           <button type="submit">custem order</button>
           <button type="submit">existing investory</button>
