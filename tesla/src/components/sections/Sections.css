@@ -39,3 +39,9 @@ p a {
   margin-left: 20px;
   align-items: center;
 }
+
+.btn button:first-child{
+  background: rgb(66, 63, 63);
+  color: azure;
+
+}
