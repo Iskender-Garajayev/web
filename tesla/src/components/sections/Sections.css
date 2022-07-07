@@ -23,14 +23,16 @@ p {
 }
 
 p a {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: black;
+
 }
 .btn {
   display: flex;
   justify-content: center;
 }
 .btn button {
+  margin-top: 30px;
   height: 30px;
   width: 320px;
   border-radius: 25px;
