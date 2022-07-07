@@ -38,10 +38,15 @@ p a {
   justify-content: center;
   margin-left: 20px;
   align-items: center;
+  text-transform: uppercase;
+  border: none;
 }
 
 .btn button:first-child{
   background: rgb(66, 63, 63);
   color: azure;
-
+}
+.btn button:last-child{
+  background: rgba(109, 106, 106, 0.65);
+  color: #000;
 }
