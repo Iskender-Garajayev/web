@@ -553,40 +553,12 @@ video {
   margin-top: 0.25rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
-}
-
-.mr-3 {
-  margin-right: 0.75rem;
-}
-
-.flex {
-  display: flex;
-}
-
 .h-4 {
   height: 1rem;
 }
 
 .w-full {
   width: 100%;
-}
-
-.flex-auto {
-  flex: 1 1 auto;
-}
-
-.flex-grow {
-  flex-grow: 1;
-}
-
-.items-center {
-  align-items: center;
 }
 
 .bg-blue-500 {
