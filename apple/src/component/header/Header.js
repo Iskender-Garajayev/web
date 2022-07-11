@@ -1,11 +1,9 @@
 import React from 'react'
-import {Router,Route} from 'react-router-dom'
+// import {Router,Route} from 'react-router-dom'
 
 function header() {
   return (
-    <Router>
-      <Route/>
-    </Router>
+    <div className=' w-full h-8 bg-red-500'></div>
   )
 }
 
