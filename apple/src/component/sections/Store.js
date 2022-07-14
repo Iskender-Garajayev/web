@@ -8,8 +8,15 @@ function Store() {
       <div className=' col-end-7 col-span-2 gap-6 flex' >
         <img className=' rounded-full w-10 h-10 mt-2' src={sg} alt="Support" />
         <div  >
-          <div>Need shopping help?</div>
-          <div>Ask a Specialist</div>
+          <div className=' font-bold'>Need shopping help?</div>
+          <div className=' text-blue-600 font-medium'>Ask a Specialist</div>
+        </div>
+      </div>
+      <div className=' col-end-7 col-span-2 gap-6 flex' >
+        <img className=' rounded-full w-10 h-10 mt-2' src={sg} alt="Support" />
+        <div  >
+          <div className=' font-bold'>Need shopping help?</div>
+          <div className=' text-blue-600 font-medium'>Ask a Specialist</div>
         </div>
       </div>
     </div>
