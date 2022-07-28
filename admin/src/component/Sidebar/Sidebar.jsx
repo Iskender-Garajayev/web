@@ -1,6 +1,9 @@
 import React from 'react'
 import './Sidebar.css'
 import Logo from '../../img/logo.png'
+import { SidebarData } from '../../Data/Data'
+import {IoArrowRedoOutline} from 'react-icons/io5'
+
 
 const Sidebar = () => {
   return (
@@ -13,11 +16,16 @@ const Sidebar = () => {
       {/* menu */}
 
       <div className="menu">
+        {SidebarData.map((item, index) =>{
+          return(
+            <div key={index} className="menuItem">
+                <item.icon/>
+                <span>{item.heading}</span>
+            </div>
+          )
+        })}
         <div className="menuItem">
-          <div>
-            icons
-          </div>
-          <span>Dashbord</span>
+        <IoArrowRedoOutline/>
         </div>
       </div>
     </div>
