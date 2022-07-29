@@ -37,7 +37,7 @@ export const CardData=[
   {
     title: 'Sales' ,
     color: {
-      background:'linear-gradient(180deg, #bb67ff 0%, c484f3 100%)',
+      backGround:'linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)',
       boxShadow: '0px 10px 20px 0px #e0c6f5'
     },
     barValue: 70 ,
@@ -52,7 +52,7 @@ export const CardData=[
   {
     title: 'Revenue' ,
     color: {
-      background:'linear-gradient(180deg, #ff919d 0%, fc929d 100%)',
+      backGround:'linear-gradient(180deg, #ff919d 0%, #fc929d 100%)',
       boxShadow: '0px 10px 20px 0px #fdc0f7'
     },
     barValue: 87 ,
@@ -66,7 +66,7 @@ export const CardData=[
   {
     title: 'Expencses' ,
     color: {
-      background:'linear-gradient(180deg, #bb67ff 0%, c484f3 100%)',
+      backGround:'linear-gradient(rgb(248, 212, 154) -146.42%, rgb(255, 202, 113) -46.42%)',
       boxShadow: '0px 10px 20px 0px #e'
     },
     barValue: 60 ,

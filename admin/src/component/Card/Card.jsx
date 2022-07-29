@@ -1,10 +1,50 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Card.css'
+import { AnimateSharedLayout } from "framer-motion"
+import { CircularProgressbar } from 'react-circular-progressbar'
+import 'react-circular-progressbar/dist/styles.css'
 
-const Card = () => {
+const Card = (props) => {
+
+  const [expanded, useExpanded] = useState(false)
+
   return (
-    <div className="Card">
-        cards
+    <AnimateSharedLayout>
+      {
+        expanded?(
+          '<ExpandedCard/>'
+        ):
+        <CompactCard param={props} set/>
+      }
+    </AnimateSharedLayout>
+  )
+}
+
+
+//compact card
+
+function CompactCard({param}){
+  const Png = param.png;
+  return(
+    <div className="CompactCard" 
+      style={
+        {
+          background: param.color.backGround,
+          boxShadow: param.color.boxShadow
+        }
+      }>
+
+      <div className="RadialBar">
+        <CircularProgressbar
+          value={param.barValue}
+          text={`${param.barValue}%`}
+        />
+      </div>
+      <div className="Ditail">
+        <Png/>
+        <span>${param.value}</span>
+        <span>Last 24 hours</span>
+      </div>
     </div>
   )
 }
