@@ -34,13 +34,14 @@ function CompactCard({param}){
         }
       }>
 
-      <div className="RadialBar">
+      <div className="radialBar">
         <CircularProgressbar
           value={param.barValue}
           text={`${param.barValue}%`}
         />
+        <span>{param.title}</span>
       </div>
-      <div className="Ditail">
+      <div className="detail">
         <Png/>
         <span>${param.value}</span>
         <span>Last 24 hours</span>
