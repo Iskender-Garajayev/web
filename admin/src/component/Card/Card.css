@@ -11,3 +11,11 @@
 .CompactCard:hover{
   box-shadow: none;
 }
+
+.RadialBar{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+}
