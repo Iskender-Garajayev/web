@@ -3,18 +3,18 @@ import './Card.css'
 import { AnimateSharedLayout } from "framer-motion"
 import { CircularProgressbar } from 'react-circular-progressbar'
 import 'react-circular-progressbar/dist/styles.css'
+import { IoCloseOutline } from 'react-icons/io5'
 
 const Card = (props) => {
 
-  const [expanded, useExpanded] = useState(false)
+  const [expanded, setExpanded] = useState(false)
 
   return (
     <AnimateSharedLayout>
       {
-        expanded?(
-          '<ExpandedCard/>'
-        ):
-        <CompactCard param={props} set/>
+        expanded ?
+          <ExpandedCard param={props} setExpanded={()=>setExpanded(false)}/>:
+        <CompactCard param={props} setExpanded={()=>setExpanded(true)}/>
       }
     </AnimateSharedLayout>
   )
@@ -23,7 +23,7 @@ const Card = (props) => {
 
 //compact card
 
-function CompactCard({param}){
+function CompactCard({param, setExpended}){
   const Png = param.png;
   return(
     <div className="CompactCard" 
@@ -32,7 +32,9 @@ function CompactCard({param}){
           background: param.color.backGround,
           boxShadow: param.color.boxShadow
         }
-      }>
+      }
+      onClick={setExpended}
+      >
 
       <div className="radialBar">
         <CircularProgressbar
@@ -49,5 +51,24 @@ function CompactCard({param}){
     </div>
   )
 }
+
+function ExpandedCard({param, setExpanded}){
+  return(
+    <div className="ExpandedCard"
+
+      style={
+        {
+          background: param.color.backGround,
+          boxShadow: param.color.boxShadow
+        }
+      }
+    >
+      <IoCloseOutline/>
+
+    </div>
+  )
+} 
+
+
 
 export default Card
