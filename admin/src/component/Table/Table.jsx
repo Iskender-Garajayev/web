@@ -14,9 +14,9 @@ function createData(name, trackingId, date, status) {
 
 const rows = [
   createData("Garfild Zoo", 3821, "2 August 2022", "Approved"),
-  createData("Mini Pets", 3822, "2 August 2022", "Pending"),
-  createData("ZooZoo", 3823, "2 August 2022", "Approved"),
-  createData("Pet Shop", 3824, "2 August 2022", "Delivered"),
+  createData("Mini Pets", 3822, "2 August 2022", "Approved"),
+  createData("ZooZoo", 3823, "2 August 2022", "Delivered"),
+  createData("Pet Shop", 3824, "2 August 2022", "Pending"),
 ];
 
 
