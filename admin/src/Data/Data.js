@@ -7,6 +7,9 @@ import {
   IoCashOutline,
   IoLogoUsd,
 } from 'react-icons/io5'
+import img1 from '../img/img1.jpg'
+import img2 from '../img/img2.jpg'
+import img3 from '../img/img3.jpg'
 
 // Sidebar Data 
 
@@ -77,4 +80,25 @@ export const CardData=[
       data: [10, 25, 15, 30, 11, 15, 20]
     }  ],
   },
+]
+
+export const updatesData =[
+  {
+    img: img1,
+    name: 'Bobbi G. Merritt',
+    notis: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia.',
+    time: '1 minutes ago'
+  },
+  {
+    img: img2,
+    name: 'Bobbi G. Merritt',
+    notis: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia.',
+    time: '1 minutes ago'
+  },
+  {
+    img: img3,
+    name: 'Bobbi G. Merritt',
+    notis: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia.',
+    time: '1 minutes ago'
+  }
 ]

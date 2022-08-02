@@ -7,7 +7,7 @@ const RightSidebar = () => {
     <div className="RightSidebar">
       <div>
         <h3>Updates</h3>
-        <Updates/>
+        <Updates />
       </div>
       <div>
         <h3>Customer Review</h3>
