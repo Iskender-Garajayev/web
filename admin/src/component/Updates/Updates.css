@@ -1,0 +1,19 @@
+.update>img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+.Updates{
+  width: 85%;
+  background: white;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.update{
+  display: flex;
+  gap:0.5re;
+}

@@ -86,19 +86,19 @@ export const updatesData =[
   {
     img: img1,
     name: 'Bobbi G. Merritt',
-    notis: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia.',
+    notis: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
     time: '1 minutes ago'
   },
   {
     img: img2,
-    name: 'Bobbi G. Merritt',
-    notis: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia.',
-    time: '1 minutes ago'
+    name: 'Nancy Hook',
+    notis: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+    time: '25 minutes ago'
   },
   {
     img: img3,
-    name: 'Bobbi G. Merritt',
-    notis: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia.',
-    time: '1 minutes ago'
+    name: 'David Alexander',
+    notis: 'Lorem, ipsum dolor sit amet consectetur adipisicing.' ,
+    time: '1 hour ago'
   }
 ]
