@@ -1,4 +1,5 @@
 import React from 'react'
+import CustReview from '../CustReview/CustReview'
 import Updates from '../Updates/Updates'
 import './RightSidebar.css'
 
@@ -11,6 +12,7 @@ const RightSidebar = () => {
       </div>
       <div>
         <h3>Customer Review</h3>
+        <CustReview/>
       </div>
     </div>
   )

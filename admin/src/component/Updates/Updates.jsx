@@ -10,7 +10,7 @@ const Updates = () => {
           <div className="update">
             <img src={update.img} alt="person" />
             <div className="notis">
-              <div>
+              <div style={{marginBottom:'0.5rem'}}>
                 <span>{update.name}</span>
                 <span> {update.notis}</span>
               </div>
